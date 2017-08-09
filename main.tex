@@ -1,0 +1,40 @@
+\documentclass[a4paper,openright,12pt,twoside]{book}
+\include{paquetes}
+
+%editar encabezados
+\chead[]{}
+% primera pagina de un capitulo
+\fancypagestyle{plain}{
+ \fancyhead[L]{}
+ \fancyhead[C]{}
+ \fancyhead[R]{\thepage}
+ \fancyfoot[L]{}
+ \fancyfoot[C]{}
+ \fancyfoot[R]{}
+ \renewcommand{\headrulewidth}{1pt}
+ \renewcommand{\footrulewidth}{1pt}
+}
+%quitar número de pagina del pie de pagína
+\cfoot[]{}
+\pagestyle{fancy}
+\frontmatter
+\setlength{\skip\footins}{1.5cm}%esto añade una distancia de 1.5 cm entrelas footnotes y el texto
+\setlength{\footnotesep}{0.5cm} %y esto añade distancia entre footnotes
+
+\begin{document}
+\include{portada}
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lhead[\thepage]{\thechapter. \rightmark}
+\rhead[ \leftmark]{\thepage}
+\tableofcontents
+\markboth{Índice}{Índice}
+\mainmatter
+\include{Mindfulness}
+\include{Dolor}
+\lhead[\thepage]{\thechapter. \rightmark}
+\rhead[ \leftmark]{\thepage}
+\bibliography{bib/columna.bib}
+\markboth{Bibliografía}{Bibliografía}
+\bibliographystyle{apalike}
+\end{document}

@@ -1,0 +1,18 @@
+\usepackage[spanish]{babel}% idioma español 
+\usepackage[utf8]{inputenc}% para escribir correctamente acentos
+\usepackage[default,osfigures,scale=0.95]{opensans} %paquete open sans
+\usepackage{setspace} %cambiar interlineado
+\usepackage{amsmath}% para hacer referencia a una ecuación incluyendo la sección donde se encuentra
+\numberwithin{equation}{section}
+\usepackage{amssymb} %fuente especial para matemáticas
+\usepackage[colorlinks=true,breaklinks=true]{hyperref} %para poder navegar a travez de nuestras referencias dentro de nuestro documento. Este hipertexto estará resaltado con color
+\usepackage{xcolor} %con las siguientes líneas podemos definir el color de las referencias
+\definecolor{c1}{rgb}{0,0,1} % azul
+\definecolor{c2}{rgb}{0,0.3,0.9} % azul clarito
+\definecolor{c3}{rgb}{0.3,0,0.9} % rojo azuloso
+\hypersetup{ linkcolor={c1}, citecolor={c2}, urlcolor={c3} } % especificamos el color para cada tipo de referencia (imágenes o ecuaciones, citas bibliográficas y paginas de internet
+\usepackage{graphicx} % incluir imágenes.
+\usepackage{natbib}% paquete para hacer referencias a la bibliografía
+\usepackage[nottoc]{tocbibind} %mostrar la bibliografía en la tabla de contenido
+\usepackage{enumerate} %para opciones de enumeración de listas (viñetas y todo eso) \usepackage{todonotes} %para poner notas en el documento, las cuales no se veran en el archivo final.
+\usepackage{fancyhdr} %para tener encabezados bonitos en nuestro documento
